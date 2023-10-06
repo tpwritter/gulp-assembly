@@ -5,12 +5,6 @@ const browserSync = require('browser-sync')
 const watch = require('gulp-watch')
 const clean = require('gulp-clean')
 
-
-let _src = "#src"
-let dist = "dist"
-
-
-
 function scripts(){
     return src("#src/js/main.js")
        .pipe(rename('main.min.js'))
